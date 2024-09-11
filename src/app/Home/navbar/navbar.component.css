@@ -1,0 +1,13 @@
+.active{
+    background-color: #f7f7f8;
+    border: none !important;
+}
+.nav-item a{
+    border: 1px solid rgba(0, 0, 0, 0.084);
+}
+.icon{
+    background-color: #ffd400;
+}
+.toppanner{
+    background-color: #191919;
+}

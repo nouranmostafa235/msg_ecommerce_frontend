@@ -1,0 +1,101 @@
+.title {
+    position: relative;
+}
+
+.title::after {
+    content: "Style Redefined.";
+    font-size: 11px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: #98989a
+}
+
+.buttons {
+    border: 1px solid rgba(0, 0, 0, 0.084);
+}
+
+.shop {
+    background-color: #ffd400;
+}
+
+.rows {
+    background-color: #f7f7f8;
+}
+.carousel1{
+    width: 40%;
+}
+.carousel1-item img{
+width: 70%;
+}
+.carousel1-control-prev-icon{
+    top: 0;
+    left: 350px;
+    border-radius: 50%;
+    
+}
+.carousel1-control-next-icon{
+    border-radius: 50%;
+
+}
+.sectitle{
+    position: relative;
+}
+.sectitle::after{
+    content: "Products.";
+    font-size: 11px;
+    position: absolute;
+    top: 5px;
+    right: 32%;
+    color: #98989a
+}
+.slides{
+    background-color: #f7f7f8;
+}
+.slides img{
+    width: 80%;
+}
+.icon{
+    background-color: #ffd400;
+}
+.iconcontainer{
+    background-color: white;
+    width: 20%;
+    padding: 15px 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+}
+.thirdtitle{
+    position: relative;
+}
+.thirdtitle::after{
+    content: "About us";
+    font-size: 11px;
+    position: absolute;
+    top: 5px;
+    right: 56%;
+    color: #98989a
+}
+.thirdcols{
+    width: 30%;
+}
+.fourthtitle{
+position: relative;
+}
+.fourthtitle::after{
+    content: "How it Works ?";
+    font-size: 11px;
+    position: absolute;
+    top: 5px;
+    right: 18%;
+    color: #98989a
+}
+.numbers{
+    color: #e4e4e7;
+    font-size: 50px;
+}
+.fourthcols{
+    width: 24%;
+}

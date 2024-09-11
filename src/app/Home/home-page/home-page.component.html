@@ -1,0 +1,226 @@
+<app-navbar></app-navbar>
+<!-- first section -->
+<section class="container d-flex justify-content-between my-5">
+    <div class="w-50 pe-5">
+        <h2 class="text-uppercase title">Elevate Your Style with Klothink</h2>
+        <p class="text-muted">Explore a world of fashion at Klothink, where trends meet affordability. Immerse yourself
+            in the latest
+            styles and seize exclusive promotions.</p>
+        <div>
+            <button class="rounded-5 p-2 buttons shop me-2"><i class="fa-solid fa-bag-shopping me-2"
+                    style="color: #000000;"></i>Shop Now</button>
+            <button class="rounded-5 px-3 py-2 buttons bg-white">Contact Us</button>
+        </div>
+        <div class="rows mt-4 rounded-3">
+            <div class="row py-3 align-items-center justify-content-center">
+                <div class="col-md-5 me-4 mb-3 bg-white rounded-3 ">
+                    <h4>Over 1000+</h4>
+                    <p>Trendsetting Styles</p>
+                </div>
+                <div class="col-md-5 mb-3 bg-white rounded-3">
+                    <h4>99%</h4>
+                    <p>Customer Satisfaction Rate</p>
+                </div>
+                <div class="col-md-5 me-4 bg-white rounded-3 ">
+                    <h4>24/7</h4>
+                    <p>Shopping Convenience</p>
+                </div>
+                <div class="col-md-5 bg-white rounded-3 ">
+                    <h4>30-Days</h4>
+                    <p>Hassle-Free Returns</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExample" class="carousel carousel1 slide position-relative">
+        <div class="carousel-inner ">
+            <div class="carousel-item carousel1-item active">
+                <img src="assets/imgs/img1.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel1-item">
+                <img src="assets/imgs/img2.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel1-item">
+                <img src="assets/imgs/img2.jpg" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel1-control-prev-icon bg-black position-absolute"
+                aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel1-control-next-icon bg-black position-absolute top-0"
+                aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+<!-- second section -->
+<section class="container mt-5">
+    <div class="sectoppanner d-flex justify-content-between">
+        <div class="w-50">
+            <h2 class="sectitle text-uppercase">Discover Fashion.</h2>
+            <p class="text-muted">Dive into a world of fashion innovation at Klothink. Our carefully curated collections bring together the
+                latest trends and timeless classics, ensuring you find the perfect pieces for every occasion.</p>
+        </div>
+        <div class="mt-5">
+            <button class="rounded-5 p-2 buttons shop me-2">View Products</button>
+        </div>
+
+    </div>
+    <div class="mt-5">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let i of products">
+                <div class="pe-3 position-relative">
+                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img1.jpg" class="d-block"
+                            alt=""></div>
+                    <p>{{i.name}}</p>
+                    <p class="text-muted">${{i.price}}</p>
+                    <div class="iconcontainer d-flex justify-content-center align-items-center"><i
+                            class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
+                </div>
+
+            </ng-template>
+            <!-- <ng-template carousels>
+                <div class="pe-3 position-relative">
+                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img1.jpg" class="d-block"
+                            alt=""></div>
+                    <p>Classic Denim Jeans</p>
+                    <p class="text-muted">$49.99</p>
+                    <div class="iconcontainer d-flex justify-content-center align-items-center"><i
+                            class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="pe-3 position-relative">
+                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img1.jpg" class="d-block"
+                            alt=""></div>
+                    <p>Classic Denim Jeans</p>
+                    <p class="text-muted">$49.99</p>
+                    <div class="iconcontainer d-flex justify-content-center align-items-center"><i
+                            class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="pe-3 position-relative">
+                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img2.jpg" class="d-block"
+                            alt=""></div>
+                    <p>Classic Denim Jeans</p>
+                    <p class="text-muted">$49.99</p>
+                    <div class="iconcontainer d-flex justify-content-center align-items-center"><i
+                            class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
+                </div>
+            </ng-template>
+
+
+            <ng-template carouselSlide>
+                <div class="pe-3 position-relative">
+                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img2.jpg" class="d-block"
+                            alt=""></div>
+                    <p>Classic Denim Jeans</p>
+                    <p class="text-muted">$49.99</p>
+                    <div class="iconcontainer d-flex justify-content-center align-items-center"><i
+                            class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="pe-3 position-relative">
+                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img1.jpg" class="d-block"
+                            alt=""></div>
+                    <p>Classic Denim Jeans</p>
+                    <p class="text-muted">$49.99</p>
+                    <div class="iconcontainer d-flex justify-content-center align-items-center"><i
+                            class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
+                </div>
+            </ng-template> -->
+        </owl-carousel-o>
+    </div>
+</section>
+
+<!-- third section -->
+<section class="container mt-5">
+    <div>
+        <h2 class="thirdtitle text-uppercase">The Klothink Experience.</h2>
+        <p class="w-75 text-muted">At Klothink, we breathe life into fashion, blending creativity with commitment. Our journey is
+            fueled by a
+            dedication to delivering unparalleled style and quality. Join us in redefining fashion and embracing a
+            community where every purchase tells a story.</p>
+    </div>
+    <div class="bg-body-tertiary p-4 rounded-4">
+        <div class="row">
+            <div class="col-md-4 thirdcols me-3 mb-4 bg-white border-1 rounded-4 pt-4">
+                <p class="d-flex align-items-center"><i class="fa-solid fa-star p-2 rounded-circle me-2 icon"
+                        style="color: #000000;"></i> Passionate Craftsmanship</p>
+                <p class="text-muted">Every garment at Klothink is crafted with passion, reflecting our commitment to
+                    quality and innovation.</p>
+            </div>
+            <div class="col-md-4 thirdcols me-3 mb-4 bg-white border-1 rounded-4 pt-4">
+                <p class="d-flex align-items-center"><i class="fa-solid fa-globe p-2 rounded-circle me-2 icon"
+                        style="color: #000000;"></i> Fashion Forward</p>
+                <p class="text-muted">We're more than a brand; we're trendsetters, curating styles that empower and
+                    inspire confidence.</p>
+            </div>
+            <div class="col-md-4 bg-white border-1 mb-4 rounded-4 pt-4">
+                <p class="d-flex align-items-center"><i class="fa-solid fa-bullhorn p-2 rounded-circle me-2 icon"
+                        style="color: #000000;"></i> Customer-Centric Approach</p>
+                <p class="text-muted">At Klothink, our customers are at the heart of everything we do. Your satisfaction
+                    is our measure of success.</p>
+            </div>
+            <div class="col-md-4 thirdcols me-3 bg-white border-1 rounded-4 pt-4">
+                <p class="d-flex align-items-center"><i class="fa-solid fa-lightbulb p-2 rounded-circle me-2 icon"
+                        style="color: #000000;"></i> Global Inspiration</p>
+                <p class="text-muted">Influenced by global trends, we bring you a diverse and dynamic collection.</p>
+            </div>
+            <div class="col-md-4 thirdcols me-3 bg-white border-1 rounded-4 pt-4">
+                <p class="d-flex align-items-center"><i class="fa-solid fa-star p-2 rounded-circle me-2 icon"
+                        style="color: #000000;"></i> Empowering Your Style</p>
+                <p class="text-muted">Beyond clothing, Klothink is a lifestyle. Join us on a journey of self-expression.
+                </p>
+            </div>
+            <div class="col-md-4  bg-white border-1 rounded-4 pt-4">
+                <p class="d-flex align-items-center"><i class="fa-solid fa-sun p-2 rounded-circle me-2 icon"
+                        style="color: #000000;"></i>Sustainable Practices</p>
+                <p class="text-muted">Klothink is committed to sustainability, integrating eco-friendly practices into
+                    our production process.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- fourth section -->
+<section class="container mt-5">
+    <div class="sectoppanner d-flex justify-content-between">
+        <div class="w-50">
+            <h2 class="fourthtitle text-uppercase mt-5">Seamless Experience.</h2>
+            <p class="text-muted">At Klothink, we've designed a straightforward shopping experience to make fashion accessible. Explore the
+                journey from discovering the latest trends to receiving your handpicked styles with ease.</p>
+        </div>
+    </div>
+<div class="bg-body-tertiary p-4 rounded-4">
+    <div class="row">
+        <div class="col-md-3 fourthcols me-2 bg-white border-1 mb-4 rounded-4 pt-4">
+         <h1 class="numbers">01</h1>
+         <p>Discover Trends</p>
+         <p class="text-muted">Explore our curated collection of over 1000 styles</p>
+        </div>
+        <div class="col-md-3 fourthcols me-2 bg-white border-1 mb-4 rounded-4 pt-4">
+            <h1 class="numbers">02</h1>
+            <p>Secure Checkout</p>
+            <p class="text-muted">Add your items to the cart and proceed to our secure checkout.</p>
+           </div>
+           <div class="col-md-3 fourthcols me-2 bg-white border-1 mb-4 rounded-4 pt-4">
+            <h1 class="numbers">03</h1>
+            <p>Swift Dispatch</p>
+            <p class="text-muted">Experience 95% same-day dispatch on orders.</p>
+           </div>
+           <div class="col-md-3 bg-white border-1 mb-4 rounded-4 pt-4">
+            <h1 class="numbers">04</h1>
+            <p>Unbox Happiness</p>
+            <p class="text-muted">Receive your carefully packaged Klothink order.</p>
+           </div>
+           
+    </div>
+</div>
+</section>
+
+<app-footer></app-footer>
