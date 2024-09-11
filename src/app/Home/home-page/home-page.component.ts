@@ -10,6 +10,7 @@ import { ProductsService } from 'src/app/Services/products.service';
 export class HomePageComponent implements OnInit{
   constructor(private service:ProductsService){}
   products:any
+  
   ngOnInit(): void {
     this.service.getProducts().subscribe({
      next:(response)=>{
