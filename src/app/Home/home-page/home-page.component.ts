@@ -15,13 +15,13 @@ export class HomePageComponent implements OnInit{
     this.service.getProducts().subscribe({
      next:(response)=>{
       this.products=response.data
-      console.log(response.data);
+      console.log(response.data,"kkkkkkkk");
      },     
     })
   }
 customOptions: OwlOptions = {
   loop: true,
-  mouseDrag: false,
+  mouseDrag: true,
   touchDrag: false,
   pullDrag: false,
   dots: false,

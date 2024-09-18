@@ -72,10 +72,11 @@
         <owl-carousel-o [options]="customOptions">
             <ng-template carouselSlide *ngFor="let i of products">
                 <div class="pe-3 position-relative">
-                    <div class="slides d-flex justify-content-center"><img src="assets/imgs/img1.jpg" class="d-block"
+                    <div class="slides d-flex justify-content-center">
+                        <img src="assets/imgs/img1.jpg" class="d-block"
                             alt=""></div>
-                    <p>{{i.name}}</p>
-                    <p class="text-muted">${{i.price}}</p>
+                    <p >{{i.name}}</p>
+                    <p [class.bg-info]="i.price>500" class="">${{i.price}}</p>
                     <div class="iconcontainer d-flex justify-content-center align-items-center"><i
                             class="fa-solid fa-cart-shopping icon rounded-circle p-3" style="color: #00040a;"></i></div>
                 </div>
@@ -222,5 +223,4 @@
     </div>
 </div>
 </section>
-
 <app-footer></app-footer>

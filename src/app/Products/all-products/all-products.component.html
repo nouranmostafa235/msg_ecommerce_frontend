@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<!-- first section -->
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="title text-uppercase">
+                Discover Now
+            </h2>
+            <p class="text-muted w-75">Dive into the world of fashion excellence at Klothink. Our curated selection brings together the latest
+                trends and timeless classics, offering you a diverse array of clothing items that resonate with your
+                unique style.</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-evenly align-items-center">
+            <div class="me-3 border-end">
+                <h6>Exclusive Offers</h6>
+                <p class="text-muted me-2">30% off on select items</p>
+            </div>
+            <div class="me-3 border-end">
+                <h6>New Arrivals</h6>
+                <p class="text-muted me-2">50+ new arrivals Daily</p>
+            </div>
+            <div>
+                <h6>Over 1,500+</h6>
+                <p class="text-muted">curated fashion products.</p>
+            </div>
+        </div>
+    </div>
+   <div class="mt-5">
+    <ul class="d-flex justify-content-evenly navbar-nav flex-row rounded-5 w-50 mx-auto list px-2">
+        <li class="nav-item">
+            <a class="nav-link list my-2 rounded-5 px-3" routerLink="/products" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact: true}">ALL</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link list my-2 rounded-5 px-2" routerLink="/products/menWear" routerLinkActive="activeLink"><i class="fa-solid fa-shirt" style="color: #4c4c4d;"></i> MEN'S WEAR</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link list my-2 rounded-5 px-2" routerLink="/products/womenWear" routerLinkActive="activeLink"><img src="assets/imgs/dress.png" alt=""> WOMEN'S WEAR</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link list my-2 rounded-5 px-2" routerLink="/products/kidWear" routerLinkActive="activeLink"><img src="assets/imgs/overalls.png" alt=""> KID'S WEAR</a>
+        </li>
+    </ul>
+   </div>
+</section>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
