@@ -16,7 +16,6 @@ export class MenWearComponent implements OnInit {
       next: (response) => {
         this.products = response.data.Consequatur
         console.log(this.products);
-        
       }
     })
   }

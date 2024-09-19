@@ -1,9 +1,11 @@
 <input type="text" class="w-50 form-control mx-auto my-4" [(ngModel)]="searchTerm" placeholder="Search by brand....">
-<owl-carousel-o [options]="customOptions">
-  <ng-template *ngFor="let i of products|search:searchTerm" carouselSlide>
-    <img src="assets/imgs/img1.jpg" alt="">
-    <h3>{{i.brand | lowercase}}</h3>
-    <h3>{{i.category}}</h3>
-    <h3>{{i.discount}}</h3>
-</ng-template>  
-</owl-carousel-o>
+<div class="container">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template *ngFor="let i of products|search:searchTerm" carouselSlide>
+      <img src="assets/imgs/img1.jpg" alt="">
+      <h3>{{i.brand | lowercase}}</h3>
+      <h3>{{i.category}}</h3>
+      <h3>{{i.discount}}</h3>
+  </ng-template>  
+  </owl-carousel-o>
+</div>
