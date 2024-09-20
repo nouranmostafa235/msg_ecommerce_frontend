@@ -12,6 +12,6 @@ export class ProductsService {
     return this.http.get("http://127.0.0.1:8000/api/products")
   }
   productsCategory():Observable<any>{
-    return this.http.get("http://127.0.0.1:8000/api/products/category")
+    return this.http.get("http://127.0.0.1:8000/api/products/get/category")
   }
 }
