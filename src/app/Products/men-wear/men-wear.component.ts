@@ -14,7 +14,7 @@ export class MenWearComponent implements OnInit {
   ngOnInit(): void {
     this.service.productsCategory().subscribe({
       next: (response) => {
-        this.products = response.data.Consequatur
+        this.products = response.data.Men
         console.log(this.products);
       }
     })
