@@ -1,4 +1,4 @@
-<input type="text" class="w-50 form-control mx-auto my-4" [(ngModel)]="searchTerm" placeholder="Search by brand....">
+<input type="text" class="w-50 form-control mx-auto my-4" [(ngModel)]="searchTerm" placeholder="Search by brand or discount....">
 <div class="container">
   <owl-carousel-o [options]="customOptions">
     <ng-template *ngFor="let i of products|search:searchTerm" carouselSlide >
