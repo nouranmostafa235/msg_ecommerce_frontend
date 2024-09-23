@@ -1,0 +1,17 @@
+<app-nav-shared></app-nav-shared>
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-5 image bg-body-tertiary">
+         <img [src]="selectedImage" class="d-block mx-auto" alt="">
+          <div class="smallImages d-flex flex-column">
+            <img src="assets/imgs/img1.jpg" (click)="onImageClick($event)" class="img-thumbnail" alt=""> 
+            <img src="assets/imgs/img2.jpg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
+            <img src="assets/imgs/img3.jpeg" (click)="onImageClick($event)"  class="img-thumbnail" alt="">
+            <img src="assets/imgs/img4.jpeg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+            
+        </div>
+    </div>
+</section>

@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/Services/products.service';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { Router } from '@angular/router';
+import { query } from '@angular/animations';
 @Component({
   selector: 'app-men-wear',
   templateUrl: './men-wear.component.html',
   styleUrls: ['./men-wear.component.css']
 })
 export class MenWearComponent implements OnInit {
-  constructor(private service: ProductsService) { }
+  constructor(private service: ProductsService , private route:Router) { }
   products: any
 
  searchTerm:string=""
@@ -15,7 +17,7 @@ export class MenWearComponent implements OnInit {
     this.service.productsCategory().subscribe({
       next: (response) => {
         this.products = response.data.Men
-        console.log(this.products);
+        console.log(this.products,"juuuuu");
       }
     })
   }
@@ -43,5 +45,7 @@ export class MenWearComponent implements OnInit {
     },
     nav: true
   }
-
+ details(id:any){
+  this.route.navigate(['/details'],{queryParams:{id:id}})
+ }
 }

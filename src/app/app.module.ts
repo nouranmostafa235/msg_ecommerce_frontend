@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './Home/home-page/home-page.component';
-import { NavbarComponent } from './Home/navbar/navbar.component';
 import { RouterModule, ROUTES } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FooterComponent } from './footer/footer.component';
@@ -16,11 +15,12 @@ import { WomenWearComponent } from './Products/women-wear/women-wear.component';
 import { KidWearComponent } from './Products/kid-wear/kid-wear.component';
 import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
+import { SharedModule } from './shared/shared.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    NavbarComponent,
     FooterComponent,
     AllProductsComponent,
     DefaultProductsComponent,
@@ -35,7 +35,8 @@ import { SearchPipe } from './search.pipe';
     CarouselModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
