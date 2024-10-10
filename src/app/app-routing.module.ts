@@ -18,7 +18,9 @@ const routes: Routes = [
       {path:"kidWear", component:KidWearComponent},
     ]
   },
-  {path:"details",loadChildren:()=>import('./details/details.module').then((x)=>x.DetailsModule)}
+  {path:"details",loadChildren:()=>import('./details/details.module').then((x)=>x.DetailsModule)},
+  {path:"productDetails",loadChildren:()=>import('./product-details/product-details.module').then((y)=>y.ProductDetailsModule)},
+
 ];
 
 @NgModule({

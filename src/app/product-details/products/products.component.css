@@ -1,0 +1,16 @@
+.smallimgs img{
+    width: 100%;
+}
+.default img{
+    width: 50%;
+}
+.smallimgs{
+    width: 4%;
+    position: absolute;
+    top:10px;
+    left: 10px;
+   
+}
+.slide img{
+width: 10%;
+}

@@ -1,17 +1,189 @@
 <app-nav-shared></app-nav-shared>
 <section class="container mt-5">
-    <div class="row">
-        <div class="col-md-5 image bg-body-tertiary">
-         <img [src]="selectedImage" class="d-block mx-auto" alt="">
-          <div class="smallImages d-flex flex-column">
-            <img src="assets/imgs/img1.jpg" (click)="onImageClick($event)" class="img-thumbnail" alt=""> 
-            <img src="assets/imgs/img2.jpg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
-            <img src="assets/imgs/img3.jpeg" (click)="onImageClick($event)"  class="img-thumbnail" alt="">
-            <img src="assets/imgs/img4.jpeg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-            
-        </div>
+  <div class="row">
+    <div class="col-md-5 image bg-body-tertiary">
+      <img [src]="selectedImage" class="d-block mx-auto" alt="">
+      <div class="smallImages d-flex flex-column">
+        <img src="assets/imgs/img1.jpg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
+        <img src="assets/imgs/img2.jpg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
+        <img src="assets/imgs/img3.jpeg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
+        <img src="assets/imgs/img4.jpeg" (click)="onImageClick($event)" class="img-thumbnail" alt="">
+      </div>
     </div>
+    <div class="col-md-6 ms-5">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h3>{{data.category}} Category <span class="rounded-4 px-2 lead fs-6">12 Left</span></h3>
+          <h3 class="lead">{{data.name}}</h3>
+          <h3 class="lead">{{data.brand}}</h3>
+          <h3 class="lead">${{data.price}}</h3>
+        </div>
+        <div>
+          <button class="btn b1 me-3 text-white rounded-4 "><i class="fa-solid fa-bag-shopping"></i> Buy Now</button>
+          <button class="btn bg-body-tertiary rounded-4"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h4>Shopping Information</h4>
+        <ul>
+          <li class="lead">
+            Standard shipping: 3-5 business days
+          </li>
+          <li class="lead">
+            Express shipping options available at checkout
+          </li>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <h4>Features</h4>
+        <ul>
+          <li class="lead">
+            Distressed detailing for a rugged look
+          </li>
+          <li class="lead">
+            Button-up front closure with engraved metal buttons
+          </li>
+          <li class="lead">
+            Two side pockets for added functionality
+          </li>
+          <li class="lead">
+            Adjustable buttoned cuffs for a personalized fit
+          </li>
+          <li class="lead">
+            Back waist tabs for customizable styling
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container mt-5">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+   <div class="me-3 slide p-3">
+    <div class="d-flex">
+      <div class="d-flex slider">
+        <img src="assets/imgs/man.jpeg" class="rounded-circle me-3" alt="">
+        <div>
+          <h5>Alex M</h5>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="lead paragraph mt-3">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet
+        stylish look. It's become my go-to piece for casual outings. Highly recommend!</p>
+    </div>
+   </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="me-3 slide p-3">
+       <div class="d-flex">
+         <div class="d-flex slider">
+           <img src="assets/imgs/man.jpeg" class="rounded-circle me-3" alt="">
+           <div>
+             <h5>Alex M</h5>
+             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+           </div>
+         </div>
+       </div>
+       <div>
+         <p class="lead paragraph mt-3">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet
+           stylish look. It's become my go-to piece for casual outings. Highly recommend!</p>
+       </div>
+      </div>
+       </ng-template>
+       <ng-template carouselSlide>
+        <div class="me-3 slide p-3">
+         <div class="d-flex">
+           <div class="d-flex slider">
+             <img src="assets/imgs/man.jpeg" class="rounded-circle me-3" alt="">
+             <div>
+               <h5>Alex M</h5>
+               <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+               <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+               <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+               <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+               <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+             </div>
+           </div>
+         </div>
+         <div>
+           <p class="lead paragraph mt-3">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet
+             stylish look. It's become my go-to piece for casual outings. Highly recommend!</p>
+         </div>
+        </div>
+         </ng-template>
+         <ng-template carouselSlide>
+          <div class="me-3 slide p-3">
+           <div class="d-flex">
+             <div class="d-flex slider">
+               <img src="assets/imgs/man.jpeg" class="rounded-circle me-3" alt="">
+               <div>
+                 <h5>Alex M</h5>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+               </div>
+             </div>
+           </div>
+           <div>
+             <p class="lead paragraph mt-3">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet
+               stylish look. It's become my go-to piece for casual outings. Highly recommend!</p>
+           </div>
+          </div>
+           </ng-template>
+           <ng-template carouselSlide>
+            <div class="me-3 slide p-3">
+             <div class="d-flex">
+               <div class="d-flex slider">
+                 <img src="assets/imgs/man.jpeg" class="rounded-circle me-3" alt="">
+                 <div>
+                   <h5>Alex M</h5>
+                   <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                   <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                   <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                   <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                   <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 </div>
+               </div>
+             </div>
+             <div>
+               <p class="lead paragraph mt-3">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet
+                 stylish look. It's become my go-to piece for casual outings. Highly recommend!</p>
+             </div>
+            </div>
+             </ng-template>
+             <ng-template carouselSlide>
+              <div class="me-3 slide p-3">
+               <div class="d-flex">
+                 <div class="d-flex slider">
+                   <img src="assets/imgs/man.jpeg" class="rounded-circle me-3" alt="">
+                   <div>
+                     <h5>Alex M</h5>
+                     <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                     <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                     <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                     <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                     <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                   </div>
+                 </div>
+               </div>
+               <div>
+                 <p class="lead paragraph mt-3">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet
+                   stylish look. It's become my go-to piece for casual outings. Highly recommend!</p>
+               </div>
+              </div>
+               </ng-template>
+  </owl-carousel-o>
 </section>

@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DetailsRoutingModule } from './details-routing.module';
-import { ProductbyIdComponent } from './productby-id/productby-id.component';
+import { ProductDetailsRoutingModule } from './product-details-routing.module';
+import { ProductsComponent } from './products/products.component';
 import { SharedModule } from '../shared/shared.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+
 @NgModule({
   declarations: [
-    ProductbyIdComponent
+    ProductsComponent
   ],
   imports: [
     CommonModule,
-    DetailsRoutingModule,
+    ProductDetailsRoutingModule,
     SharedModule,
     CarouselModule
   ]
 })
-export class DetailsModule { }
+export class ProductDetailsModule { }

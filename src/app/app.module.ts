@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
 import { SharedModule } from './shared/shared.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,7 @@ import { SharedModule } from './shared/shared.module';
     MenWearComponent,
     WomenWearComponent,
     KidWearComponent,
-    SearchPipe
+    SearchPipe,
   ],
   imports: [
     BrowserModule,

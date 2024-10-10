@@ -17,7 +17,7 @@ export class MenWearComponent implements OnInit {
     this.service.productsCategory().subscribe({
       next: (response) => {
         this.products = response.data.Men
-        console.log(this.products,"juuuuu");
+        console.log(this.products,);
       }
     })
   }
@@ -46,6 +46,6 @@ export class MenWearComponent implements OnInit {
     nav: true
   }
  details(id:any){
-  this.route.navigate(['/details'],{queryParams:{id:id}})
+  this.route.navigate(['/productDetails'],{queryParams:{id:id}})
  }
 }
